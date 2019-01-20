@@ -1,0 +1,76 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>ePrism project - Let's get started</title>
+  <meta charSet="UTF-8" />
+  <link href="/main.css" rel="stylesheet" />
+  <meta property="og:title" content="ePrism - Let's get started!" />
+</head>
+<body>
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-8 offset-md-2">
+        <picture class="img-fluid">
+          <source type="image/svg+xml" srcset="/img/get_started.svg" />
+          <img class="img-fluid" src="/img/get_started.png" alt="Header" />
+        </picture>
+      </div>
+    </div>
+    <h1 class="text-center">Get started using ePrism</h1>
+    <p>The fitst application you see when you turn your ePrism on, is the test application setup by manufacture to test your ePrism device. Now it's the time to build you own application. It's easy and fun. There are a couple of choices for programing ePrism, but to make it simple we just focus on Arduino since it's more popular and powerful. To get started using ePrism you need to do the following steps:</p>
+    <ol>
+      <li><a href="#install">Setup Arduino</a></li>
+      <li><a href="#esp32">Install Arduino core for ESP32</a></li>
+      <li><a href="#libraries">Install the required libraries</a></li>
+      <li><a href="#sample">Clone the test repo (using Git)</a></li>
+      <li><a href="#run">Run it on the device</a></li>
+    </ol>
+    
+    <hr/>
+
+    <h2 id="install">Setup Arduino</h2>
+    <p>You can follow the <a href="https://www.arduino.cc/en/Guide/HomePage#install" target="_blank">Arduino official documentation</a> to complete the setup procedure.</p>
+
+    <h2 id="esp32">Install Arduino core for ESP32</h2>
+    <p>You can follow the <a href="https://github.com/espressif/arduino-esp32" target="_black">ESP32 official documentation</a> to complete the setup procedure.</p>
+
+    <h2 id="libraries">Install the required libraries</h2>
+    <p>In order to use ePrism features like Audio, LCD & etc, you need to add a set of libraries to your Arduino IDE. As long as you apply a right configuration to your library, you can use whatever standard library you want, but we highly recommend these:</p>
+    <ul>
+        <li><a href="https://github.com/earlephilhower/ESP8266Audio" target="_blank">Audio</a></li>
+        <li><a href="https://github.com/loboris/ESP32_TFT_library" target="_blank">LCD (TFT)</a></li>
+    </ul>
+    <p>You can find the <a href="https://www.arduino.cc/en/guide/libraries" target="_blank">setup instruction</a> on Arduino official documentation.</p>
+    
+    <h2 id="sample">Clone the test repo (using Git)</h2>
+    <p>You can clone one of the samples <a href="https://github.com/eprism/" target="_blank">on our Github repo list</a> or just open one of the repos using the browser and click on <b>Clone or download</b> to get the source code.</p>
+    
+    <h2 id="run">Run it on the device</h2>
+    <p>Let's get started with <a href="https://github.com/eprism/eprism-sample-start" target="_blank">eprism-sample-start</a>. Download the zip file or clone the repo.</p>
+    <ul>
+      <li>Open Arduino IDE</li>
+      <li>From menu: Open &gt; File ...</li>
+      <li>Open the "eprism-sample-start"</li>
+      <li>Connect the USB to the device</li>
+      <li>
+        <p>Open tools menu and be sure you have these configurations selected:</p>
+        <ul>
+          <li>Board: "ESP32 Dev Module"</li>
+          <li>Flash Mode: "DIO"</li>
+          <li>Flash Size: "4MB (32Mb)"</li>
+          <li>Partition Scheme: "Default"</li>
+          <li>Flash Frequency: "80MHz"</li>
+          <li>PSRAM: "Disabled"</li>
+          <li>Upload Speed: "230400"</li>
+          <li>Core Debug Level: "None"</li>
+        </ul>
+        <p>Then choose the Active port that device is connected to.</p>
+      </li>
+      <li>From menu: Sketch &gt; Upload</li>
+      <li>Congratulation, you just run your first application on ePrism. For more information and documentation please find the sample projects <a href="https://github.com/eprism" target="_blank">here</a>.</li>
+    </ul>
+  </div>
+  <h1>&nbsp;</h1>
+  <script src="/main.js" />
+</body>
+</html>
