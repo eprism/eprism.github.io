@@ -55,7 +55,8 @@ module: {
         {from: 'src/img', to: 'img'},
         {from: 'src/font', to: 'font'},
         {from: 'src/index.html', to: 'index.html'},
-        {from: 'src/get_started.html', to: 'get_started/index.html'}
+        {from: 'src/get_started.html', to: 'get_started/index.html'},
+        {from: 'src/applications.html', to: 'applications/index.html'}
     ]),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
